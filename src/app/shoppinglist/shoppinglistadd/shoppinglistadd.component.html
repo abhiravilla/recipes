@@ -1,0 +1,26 @@
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Ingredient Name" aria-label="Ingredient Name" aria-describedby="basic-addon2" #name>
+</div>
+<div class="input-group mb-3">
+  <input type="number" class="form-control" placeholder="Ingredient Quantity" aria-label="Ingredient Quantity"
+   aria-describedby="basic-addon2" min="1" #quantity>
+</div>
+<div class="action">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12"> 
+        <div class="row">
+          <div class="col">
+            <button class="btn btn-success" type="button" (click) = "ingAdd()">Add</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-danger" type="button">Delete</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-primary" type="button">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

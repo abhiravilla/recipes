@@ -1,0 +1,18 @@
+<div class="container.fluid">
+    <div class="row">
+      <div class="col-md-2"> </div>
+      <div class="col-md-4">
+        <div class = "col-sm-7">
+          <app-shoppinglistadd ></app-shoppinglistadd>
+        </div>
+      </div>
+      <div class = "col-md-4">
+          <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action" *ngFor = "let ing of ingredientSer.ingredients">
+                  {{ing.name}} ({{ing.quantity}}) 
+              </a>
+          </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+</div>
