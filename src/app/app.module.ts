@@ -13,6 +13,8 @@ import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
 import { ShoppinglistaddComponent } from './shoppinglist/shoppinglistadd/shoppinglistadd.component';
 import { HeaderComponent } from './header/header.component';
 import { Approuting } from './app-routing.module';
+import { recipeService } from './recipebook/files/recipe.service';
+import { RecipeaddComponent } from './recipebook/recipeadd/recipeadd.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { Approuting } from './app-routing.module';
     RecipeitemComponent,
     ShoppinglistComponent,
     ShoppinglistaddComponent,
-    HeaderComponent
+    HeaderComponent,
+    RecipeaddComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,7 @@ import { Approuting } from './app-routing.module';
     HttpModule,
     Approuting
   ],
-  providers: [],
+  providers: [recipeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

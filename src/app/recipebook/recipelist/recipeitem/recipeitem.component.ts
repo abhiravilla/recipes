@@ -18,8 +18,7 @@ export class RecipeitemComponent implements OnInit {
     this.item = this.recpSer.getSpecificItem(this.index);
     }
   clicked(){
-    console.log("In recipe item component "+this.item.name);
-    this.router.navigate(['/recipebook','recipedetail']);
+    this.router.navigate(['/recipebook','recipedetail'],{ queryParams: { index: this.index } });
     // this.recpSer.recipeSelected.emit(this.index);
   } 
 }

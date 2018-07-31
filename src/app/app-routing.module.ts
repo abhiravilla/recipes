@@ -12,6 +12,7 @@ const appRoute : Routes = [ { path: '', redirectTo:'/recipebook', pathMatch:'ful
                                 ]},
                             ]},
                             { path : 'recipebook/recipedetail', component:RecipedetailComponent},
+                            { path : 'recipebook/recipedetail:index', component:RecipedetailComponent},
                             { path : 'shoppinglist', component : ShoppinglistComponent},
                             { path: '**',redirectTo:'/recipebook'}
                            ];

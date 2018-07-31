@@ -1,3 +1,21 @@
-<p>
-  recipedetail works!
-</p>
+<div class="recipe-item">
+  <div class="row">  
+  <div class="col-md-8">
+    <h1 class = "title">
+      {{recipe_detail.name}}
+    </h1>
+    <br>
+    <br>
+    <br>
+    <p class="desc" >Description</p>
+    <br>
+    <br>
+    <br>
+    <p class="text">
+      {{recipe_detail.description}}
+    </p>
+  </div> 
+  <div class="col-md-4 float-right">
+    <img class ="img-responsive logo" alt="Recipe Logo" src="{{recipe_detail.imagePath}}">
+  </div>
+</div>
